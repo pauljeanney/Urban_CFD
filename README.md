@@ -7,7 +7,7 @@ It features:
 
 🌀 **simpleFoam-based simulation** using the **SF** (steady-state) solver.
 
-🌫️ A custom scalar transport solver called **simpleConlyFoam** using the **SCF** – designed for simulating **air pollution dispersion** in urban areas.
+🌫️ A custom scalar transport solver called **simpleConlyFoam** using the **SCF** file – designed for simulating **air pollution dispersion** in urban areas.
 
 ---
 
