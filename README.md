@@ -7,9 +7,7 @@ It features:
 
 🌀 **simpleFoam-based simulation** using the **SF** (steady-state) solver.
 
-🌫️ A custom scalar transport solver called **simpleConlyFoam** – designed for simulating **air pollution dispersion** in urban areas.
-
-🏙️ Tailored for **urban CFD applications** like pollutant spread in cityscapes.
+🌫️ A custom scalar transport solver called **simpleConlyFoam** using the **SCF** – designed for simulating **air pollution dispersion** in urban areas.
 
 ---
 
