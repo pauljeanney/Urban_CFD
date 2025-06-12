@@ -1,0 +1,160 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       volScalarField;
+    location    "0";
+    object      nut;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [ 0 2 -1 0 0 0 0 ];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    Uref            5;
+    Zref            10;
+    zDir            ( 0 0 1 );
+    angle           30;
+    angleRad        0.523598775598;
+    comp1           0.866025403785;
+    comp2           0.5;
+    flowDir         ( 0.866025403785 0.5 0 );
+    z0              uniform 0.25;
+    z0_             0.25;
+    z0_Vegetation   uniform 0.1;
+    z0_Water        uniform 0.002;
+    zGround         uniform 614.593;
+    kappa           0.41;
+    Cmu             0.09;
+    E               9.8;
+    pressure        0;
+    uStar           0.552029141532;
+    Utop            5;
+    kInlet          1.01578724367;
+    epsilonInlet    0.0400293273124;
+    epsilonTop      0.0400293273124;
+    comp1byUref     4.33012701893;
+    comp2byUref     2.5;
+    flowVelocity    ( 4.33012701893 2.5 0 );
+    inletOutlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    top
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Buildings
+    {
+        type            nutkWallFunction;
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        value           uniform 0;
+    }
+    Water
+    {
+        Uref            5;
+        Zref            10;
+        zDir            ( 0 0 1 );
+        angle           30;
+        angleRad        0.523598775598;
+        comp1           0.866025403785;
+        comp2           0.5;
+        flowDir         ( 0.866025403785 0.5 0 );
+        z0              uniform 0.002;
+        z0_             0.25;
+        z0_Vegetation   uniform 0.1;
+        z0_Water        uniform 0.002;
+        zGround         uniform 614.593;
+        kappa           0.41;
+        Cmu             0.09;
+        E               9.8;
+        pressure        0;
+        uStar           0.552029141532;
+        Utop            5;
+        kInlet          1.01578724367;
+        epsilonInlet    0.0400293273124;
+        epsilonTop      0.0400293273124;
+        comp1byUref     4.33012701893;
+        comp2byUref     2.5;
+        flowVelocity    ( 4.33012701893 2.5 0 );
+        type            nutkAtmRoughWallFunction;
+        value           uniform 0;
+    }
+    Terrain
+    {
+        Uref            5;
+        Zref            10;
+        zDir            ( 0 0 1 );
+        angle           30;
+        angleRad        0.523598775598;
+        comp1           0.866025403785;
+        comp2           0.5;
+        flowDir         ( 0.866025403785 0.5 0 );
+        z0              uniform 0.25;
+        z0_             0.25;
+        z0_Vegetation   uniform 0.1;
+        z0_Water        uniform 0.002;
+        zGround         uniform 614.593;
+        kappa           0.41;
+        Cmu             0.09;
+        E               9.8;
+        pressure        0;
+        uStar           0.552029141532;
+        Utop            5;
+        kInlet          1.01578724367;
+        epsilonInlet    0.0400293273124;
+        epsilonTop      0.0400293273124;
+        comp1byUref     4.33012701893;
+        comp2byUref     2.5;
+        flowVelocity    ( 4.33012701893 2.5 0 );
+        type            nutkAtmRoughWallFunction;
+        value           uniform 0;
+    }
+    Vegetation
+    {
+        Uref            5;
+        Zref            10;
+        zDir            ( 0 0 1 );
+        angle           30;
+        angleRad        0.523598775598;
+        comp1           0.866025403785;
+        comp2           0.5;
+        flowDir         ( 0.866025403785 0.5 0 );
+        z0              uniform 0.1;
+        z0_             0.25;
+        z0_Vegetation   uniform 0.1;
+        z0_Water        uniform 0.002;
+        zGround         uniform 614.593;
+        kappa           0.41;
+        Cmu             0.09;
+        E               9.8;
+        pressure        0;
+        uStar           0.552029141532;
+        Utop            5;
+        kInlet          1.01578724367;
+        epsilonInlet    0.0400293273124;
+        epsilonTop      0.0400293273124;
+        comp1byUref     4.33012701893;
+        comp2byUref     2.5;
+        flowVelocity    ( 4.33012701893 2.5 0 );
+        type            nutkAtmRoughWallFunction;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //
