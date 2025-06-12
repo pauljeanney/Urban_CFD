@@ -1,4 +1,4 @@
-# 🏙️ Urban_CFD – CFD Simulations with Scalar Transport
+# 🏙️ Urban_CFD – CFD Simulations + air pollution scalar transport.
 
 Welcome to **Urban_CFD**! 🌬️🌆  
 This repository contains a Computational Fluid Dynamics (CFD) simulation project using **OpenFOAM** focused on urban environments.
