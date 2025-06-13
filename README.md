@@ -8,6 +8,8 @@ It features:
 
 🌫️ A custom scalar transport solver called **simpleConlyFoam** using the **SCF** file – designed for simulating **air pollution dispersion** in urban areas.
 
+With the associated solver in the of8 folder.
+
 ---
 
 Built for environmental and fluid dynamics research.
